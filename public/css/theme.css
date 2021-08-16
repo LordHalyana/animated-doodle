@@ -1,0 +1,46 @@
+html{
+    background-color: #ff5ccd;
+    color: #fff
+}
+html body{
+    width: 100%;
+    height: 250px;
+    background-color: #ff5ccd;
+    color: #fff;
+}
+
+.pink{
+    background-color: hotpink;
+    margin-bottom: 50px;
+}
+
+.pink a{
+    color: #fff;
+    background-color: hotpink;
+}
+
+.pink ul{
+    background-color: hotpink;
+}
+
+.pink button{
+    border: solid #fff 2px;
+}
+
+.header{
+    margin-top: 70px;
+}
+
+.content{
+    margin-top: 25px;
+}
+
+.footer{
+    margin-top: 150px;
+    margin-bottom: 25px;
+    border: solid black 5px;
+}
+
+.navbar-toggler {
+    color: #fff;
+}

@@ -1,0 +1,31 @@
+<%- include('../partials/head') %>
+
+<body>
+    <%- include('../partials/navbar') %>
+
+    <div class="header">
+        <h2><%= category %>  Products</h2>
+    </div>
+
+    <div class="content">
+        
+        <ul>
+            <% for(let product of products) { %>
+                <li><a href="/products/<%= product.id %>" class="btn btn-outline-primary"> <%= product.name %> </a> <b><%= product.price %> $</b> </li>
+                <% } %>  
+        </ul>
+        <section>
+            <% if(category !== 'All') { %> 
+            <a href="/products" class="btn btn-outline-info">All Products</a>
+            <% } %> 
+        </section>
+        <div>
+            <a href="/" class="btn btn-outline-danger">Home Page</a>
+            <a href="/products/new" class="btn btn-outline-success"> Add New Product</a>
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>
+
+</body>
+</html>

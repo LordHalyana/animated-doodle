@@ -9,15 +9,15 @@
 
     <div class="content">
         
-        <h1> User:  <%= comment.username %> </h1>
+        <h1> User:  NA </h1>
 
-        <p> Comment: <%= comment.comment %> </p>
+        <p> Comment: NA </p>
         
-        <p> id: <%= comment.id %> </p>
+        <p> id: <%= 444+1 %> </p>
 
         <a href="/comments" class="btn btn-outline-warning"> back to comments</a>
-        <a href="/comments/<%= comment.id %>/edit" class="btn btn-outline-info"> edit comment</a>
-        <form method="POST" action="/comments/<%= comment.id %>?_method=DELETE">
+        <a href="/comments/<%= 444+1 %>/edit" class="btn btn-outline-info"> edit comment</a>
+        <form method="POST" action="/comments/<%= 444+1 %>?_method=DELETE">
             <button class="btn btn-outline-danger">Delete</button>
         </form>
     </div>
